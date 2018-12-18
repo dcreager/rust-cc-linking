@@ -17,3 +17,12 @@ other, **and** the "smaller" library is linked **after** the "larger" one, then
 the compilation [happens to succeed](cc-01-works-by-accident).  If you link the
 "smaller" library **before** the "larger" one, then the compilation
 [fails](cc-02-broken).
+
+## Steps to reproduce
+
+Verified on Linux:
+
+1. `git clone https://github.com/dcreager/rust-cc-linking`
+2. `cd rust-cc-linking`
+3. `cargo build -p cc-01-works-by-accident`
+4. `cargo build -p cc-02-broken`

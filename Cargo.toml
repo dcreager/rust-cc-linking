@@ -1,4 +1,5 @@
 [workspace]
 members = [
   "cc-01-works-by-accident",
+  "cc-02-broken",
 ]

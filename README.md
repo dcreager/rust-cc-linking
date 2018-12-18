@@ -14,9 +14,9 @@ calling the linker.  This causes problems if we try to:
 
 If one of the libraries depends on a struct subset of the symbols needed by the
 other, **and** the "smaller" library is linked **after** the "larger" one, then
-the compilation [happens to succeed](cc-01-works-by-accident).  If you link the
-"smaller" library **before** the "larger" one, then the compilation
-[fails](cc-02-broken).
+the compilation [happens to succeed](cc-01-works-by-accident/build.rs).  If you
+link the "smaller" library **before** the "larger" one, then the compilation
+[fails](cc-02-broken/build.rs).
 
 ## Steps to reproduce
 

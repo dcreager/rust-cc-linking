@@ -12,11 +12,11 @@ calling the linker.  This causes problems if we try to:
   - each of which depends on an external library (in this case, libstdc++),
   - but which depend on different sets of symbols from that library.
 
-If one of the libraries depends on a struct subset of the symbols needed by the
+If one of the libraries depends on a strict subset of the symbols needed by the
 other, **and** the "smaller" library is linked **after** the "larger" one, then
 the compilation [happens to succeed](cc-01-works-by-accident/build.rs).  If you
 link the "smaller" library **before** the "larger" one, then the compilation
-[fails](cc-02-broken/build.rs).
+[fails](cc-02-broken/build.rs).  (But only on Linux.)
 
 ## Steps to reproduce
 

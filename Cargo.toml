@@ -2,4 +2,5 @@
 members = [
   "cc-01-works-by-accident",
   "cc-02-broken",
+  "cc-03-change-link-kind",
 ]
